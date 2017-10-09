@@ -32,13 +32,13 @@ public class PointsNearestToEachOther {
 		// Display the result
 		System.out.println("The closest two points are " +
 			"(" + points[point1][0] + ", " + points[point1][1] + ") and (" +
-				points[point2][0] + ", " + points[point2][1] + ")");
+				points[point2][0] + ", " + points[point2][1] + ")"); // JA: You forgot to include the z coordinate
 	}
 
 	// Finds the distance between the two points
 	public static double distance(
 		double x1, double y1, double z1, double x2, double y2, double z2) {
 		return Math.sqrt(Math.pow(x2 - x1, 2) +  
-			Math.pow(y2 - y1, 2) + Math.pow(y2 - y1, 2));
+			Math.pow(y2 - y1, 2) + Math.pow(y2 - y1, 2)); // JA: last term is z2 - z1
 	}
 }
